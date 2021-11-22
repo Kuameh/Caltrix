@@ -1,6 +1,27 @@
 import { useReducer } from 'react';
 import './styles.css';
 
+const ACTIONS = {
+  ADD_DIGIT: 'add-digit',
+  CHOOSE_OPERATION: 'choose-operation',
+  CLEAR: 'clear',
+  DELETE_DIGIT: 'delete-digit',
+  EVALUATION: 'evaluation',
+};
+
+function reducer(state, { type, payload }) {
+  switch (type) {
+    case ADD_DIGIT:
+      return {
+        ...state,
+        currentOperand: `${currentOperand || ''}${payload.digit}`,
+      };
+
+    default:
+      break;
+  }
+}
+
 function App() {
   const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
     reducer,
