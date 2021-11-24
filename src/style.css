@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+:root {
+  --accent-color: #ff9601;
+  --background-color-btn: #353131;
+  --background-color-1: #2c2223;
+  --background-color-2: #2e2627;
+  --font-white: #fefefe;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', serif;
+}
+
+body {
+  margin: 0;
+  /* background: linear-gradient(to right, #2c2223, #453c3d); */
+  background: var(--background-color-2);
+}
+
+.calculator-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  border-radius: 30px;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: var(--font-white);
+  background-color: var(--background-color-btn);
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  background-color: rgb(255 255 255 / 0.9);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgb(0 0 0 / 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 20px;
+  height: 15vh;
+  font-weight: 500;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output .previous-operand {
+  color: rgb(255 255 255 / 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: rgb(255 255 255);
+  font-size: 2.5rem;
+}
+
+.accent-color {
+  background: var(--accent-color) !important;
+}
