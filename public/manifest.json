@@ -1,25 +1,31 @@
 {
-  "short_name": "Calc App",
-  "name": "Simple Calculator App",
+  "name": "Caltrix",
+  "short_name": "Caltrix",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#434343",
+  "description": "Simple calculator app for simple calculations",
+  "dir": "ltr",
+  "categories": "education,finance,utilities",
+  "lang": "en",
+  "orientation": "any",
+  "scope": "/",
+  "theme_color": "#ffa627",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "calc-app-icon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "calc-app-icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "calc-app-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
