@@ -1,4 +1,5 @@
 import { ACTIONS } from '../../App';
+import '../../style.css';
 
 export default function OperationButton({ dispatch, operation }) {
   return (
@@ -6,6 +7,7 @@ export default function OperationButton({ dispatch, operation }) {
       onClick={() =>
         dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: { operation } })
       }
+      className="accent-color"
     >
       {operation}
     </button>
