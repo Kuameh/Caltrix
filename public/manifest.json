@@ -13,19 +13,34 @@
   "theme_color": "#ffa627",
   "icons": [
     {
-      "src": "calc-app-icon.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "calc-app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
-      "src": "calc-app-icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "calc-app-icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "calc-app-icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "calc-app-icon-24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "calc-app-icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "calc-app-icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "calc-app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ]
 }
